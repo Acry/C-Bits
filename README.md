@@ -19,7 +19,7 @@ in a logical mannor - also called bit masking.
 
 ToDo:  
 Applications: [Bit Twiddling Hacks
-By Sean Eron Anderson](http://graphics.stanford.edu/~seander/bithacks.html)  
-
-[My C Snippets](https://gist.github.com/Acry/554e04bab3a2669a5ba2ecd4d673e875) |
+By Sean Eron Anderson](http://graphics.stanford.edu/~seander/bithacks.html) | 
+[Mark Down Version](https://github.com/gibsjose/BitHacks/blob/master/BitHacks.md)  
+    [My C Snippets](https://gist.github.com/Acry/554e04bab3a2669a5ba2ecd4d673e875) |
  [Other API's](https://acry.github.io/)  
