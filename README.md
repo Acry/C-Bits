@@ -14,6 +14,7 @@ And binary Operations.
   * bin_ops.c handles some useful general purpose binary Operations.  
 inline ASM/INTEL shift and rotate (aka. circular shift) and setting bits
 in a logical mannor - also called bit masking.
+[Run this code:](https://ideone.com/e9iqwh)  
 
 ![Screenshot](./dox.svg)
 
