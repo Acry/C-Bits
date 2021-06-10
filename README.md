@@ -21,6 +21,7 @@ in a logical mannor - also called bit masking.
 ToDo:  
 Applications: [Bit Twiddling Hacks
 By Sean Eron Anderson](http://graphics.stanford.edu/~seander/bithacks.html) | 
-[Mark Down Version](https://github.com/gibsjose/BitHacks/blob/master/BitHacks.md)  
+[Mark Down Version](https://github.com/gibsjose/BitHacks/blob/master/BitHacks.md)  |
+[Some Notes](https://www.cs.tau.ac.il/~roded/courses/softp-b06/chapter7.txt) |
     [My C Snippets](https://gist.github.com/Acry/554e04bab3a2669a5ba2ecd4d673e875) |
  [Other API's](https://acry.github.io/)  
