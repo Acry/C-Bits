@@ -5,7 +5,7 @@ define colorecho
 endef
 
 CC       = gcc
-CFLAGS   = -Wall -Wextra -mtune=native
+CFLAGS   = -Wall -Wextra -mtune=native -g
 LDFLAGS  = 
 
 .SUFFIXES:
