@@ -1,3 +1,9 @@
+define colorecho
+	@tput setaf 2
+	@echo $1
+	@tput sgr0
+endef
+
 CC       = gcc
 CFLAGS   = -Wall -Wextra -mtune=native
 LDFLAGS  = 
@@ -14,8 +20,11 @@ all: $(TARGETS)
 
 bitwise_ops: bitwise_ops.c
 	$(CC) $(CFLAGS) -o $@ $+ $(LDFLAGS)
+	$(call colorecho,"$@ success. ./\"$@\" to execute.")
+
 bin_ops: bin_ops.c
 	$(CC) $(CFLAGS) -o $@ $+ $(LDFLAGS)
+	$(call colorecho,"$@ success. ./\"$@\" to execute.")
 
 .PHONY: clean
 clean:
