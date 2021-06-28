@@ -1,0 +1,16 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer-2",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "ms-vscode.cpptools",
+    // "ms-vscode.makefile-tools",
+    "spmeesseman.vscode-taskexplorer",
+    "streetsidesoftware.code-spell-checker",
+    "wmaurer.change-case",
+
+  ],
+  "unwantedRecommendations": []
+}
