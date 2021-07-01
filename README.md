@@ -119,9 +119,23 @@ This instruction is provided for converting little-endian values to big-endian f
 
 BE Byte-Order: `01` `02` `03` `04` = `0x01` `0x02` `0x03` `0x04`
 LE Byte-Order: `04` `03` `02` `01` = `0x04` `0x03` `0x02` `0x01`
-
+###
 Mixed-endian or middle endian (e.g. PDP-11):
 ME Byte-Order: `02` `01` `04` `03` = `0x02` `0x01` `0x04` `0x03`
+
+A 32-bit number is converted from Big Endian to Mid-Little Endian as follows:
+
+divide the 4 bytes in half and convert the halves to Little Endian by reversing their order.
+
+For example, 01 02 03 04 in Mid-Little Endian is 03 04 01 02.
+
+The same number is converted to Mid-Big Endian as follows:
+
+(1) convert the number to LE (reverse the order of the 4 bytes),
+(2) divide the bytes in two, and
+(3) reverse the order of the halves.
+
+For example, 01 02 03 04 in Mid-Big Endian is 02 01 04 03.
 
 Some systems are capable of processing bi-endian data (BE and LE).
 
