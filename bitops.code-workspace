@@ -4,4 +4,10 @@
       "path": "."
     }
   ],
+  "settings": {
+    "files.associations": {
+      "byteswap.h": "c",
+      "endian.h": "c"
+    }
+  },
 }

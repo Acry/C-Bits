@@ -4,19 +4,21 @@
 /*
  * C bitwise operators
  * 6 of them:
- * >>	shift right
- * <<	shift left
- * ~	NOT
- * &	AND
- * |	OR
- * ^	XOR
+ * >> shift right
+ * << shift left
+ * ~ NOT
+ * & AND
+ * | OR
+ * ^ XOR
+ * 
  */
 
 /*
- * A char in C is guaranteed to be 1 byte.
+ * 
  * Look dox.svg for truth tables and other stuff.
  * And check https://github.com/Acry/Byte_Drawer for an
  * interactive visualisation.
+ *
  */
 
 void traverse_byte(unsigned char);
@@ -34,28 +36,28 @@ int main(int argc, char **argv)
 	traverse_byte(x); // 1
 	// 00000000
 
-	// Byte unset
+	// Byte set
 	x = 1;
 	traverse_byte(x); // 2
 	// 00000001
 
-	// >>	Shift Left by 4
+	// >> Shift left by 4
 	x = x << 4;
 	traverse_byte(x); // 3
 	// 00010000
 
-	// <<	Shift Right by 1
+	// >> Shift Right by 1
 	x = x >> 1;
 	traverse_byte(x); // 4
 	// 00001000
 
-	// ~	NOT
+	// ~ NOT
 	// Inverts Bits
 	x = ~x;
 	traverse_byte(x); // 5
 	// 11110111
 
-	// &	AND
+	// & AND
 	// Both set results in set
 	unsigned char a = 0;
 	unsigned char b = 0xff;
@@ -69,7 +71,7 @@ int main(int argc, char **argv)
 	traverse_byte(c); // 7
 	// 00000001
 
-	// |	OR
+	// | OR
 	// any set results in set
 	a = 85;
 	b = 170;
@@ -77,7 +79,7 @@ int main(int argc, char **argv)
 	traverse_byte(c); // 8
 	// 11111111
 
-	// ^	XOR
+	// ^ XOR
 	// either set results in set, but not both
 	a = 213;
 	c = a ^ b;
