@@ -59,7 +59,7 @@ For the representation of unsigned integers, it is common to map the conditions 
 
 - `sizeof(char)` is guaranteed to be 1
 
-Unless you're writing code on a DSP, POSIX and Windows have (and mandate) 8-bit bytes so a `char` in C is 1 byte.
+Unless you're writing code on a DSP, [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdint.h.html) and Windows have (and mandate) 8-bit bytes so a `char` in C is 1 byte.
 
 ## Byte Order and data representation in memory
 
