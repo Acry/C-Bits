@@ -103,39 +103,45 @@ Many compilers provide built-ins that are likely to be compiled into native proc
 - macOS `OSByteOrder.h` macros (from/to BE and LE, up to 64-bit).
 ### ASM
 
-INTEL 
-BSWAP (ASM mnemonic)
-BSWAP r32 - Reverses the byte order of a 32-bit register.
-BSWAP r64 - Reverses the byte order of a 64-bit register.
+INTEL  
+`BSWAP` (ASM mnemonic)  
+`BSWAP r32` - Reverses the byte order of a 32-bit register.  
+`BSWAP r64` - Reverses the byte order of a 64-bit register.  
 
-Opcode: 0FC8 + Register
+Opcode: `0FC8 + Register`  
 
-This instruction is provided for converting little-endian values to big-endian format and vice versa. To swap bytes in a word value (16-bit register), use the XCHG instruction.
+This instruction is provided for converting little-endian values to big-endian format and vice versa. To swap bytes in a word value (16-bit register), use the `XCHG` instruction.
 
 ### 32-Bit Integer example
 
-`sizeof(unsigned int); // 4 Bytes`
+`sizeof(unsigned int); // 4 Bytes`  
 `unsigned int x = 16909060;`
 
-BE Byte-Order: `01` `02` `03` `04` = `0x01` `0x02` `0x03` `0x04`
+BE Byte-Order: `01` `02` `03` `04` = `0x01` `0x02` `0x03` `0x04`  
 LE Byte-Order: `04` `03` `02` `01` = `0x04` `0x03` `0x02` `0x01`
-###
-Mixed-endian or middle endian (e.g. PDP-11):
-ME Byte-Order: `02` `01` `04` `03` = `0x02` `0x01` `0x04` `0x03`
+
+![](32-bit.png)
+
+### Mixed-endian
+
+Mixed-endian or middle endian (e.g. PDP-11):  
+ME Byte-Order: `02` `01` `04` `03` = `0x02` `0x01` `0x04` `0x03`  
 
 A 32-bit number is converted from Big Endian to Mid-Little Endian as follows:
 
 divide the 4 bytes in half and convert the halves to Little Endian by reversing their order.
 
-For example, 01 02 03 04 in Mid-Little Endian is 03 04 01 02.
+For example, `01` `02` `03` `04` in Mid-Little Endian is `03` `04` `01` `02`.
 
 The same number is converted to Mid-Big Endian as follows:
 
-(1) convert the number to LE (reverse the order of the 4 bytes),
-(2) divide the bytes in two, and
-(3) reverse the order of the halves.
+1. convert the number to LE (reverse the order of the 4 bytes),
+2. divide the bytes in two, and
+3. reverse the order of the halves.
 
-For example, 01 02 03 04 in Mid-Big Endian is 02 01 04 03.
+For example, `01` `02` `03` `04` in Mid-Big Endian is `02` `01` `04` `03`.
+
+### Bi-endian
 
 Some systems are capable of processing bi-endian data (BE and LE).
 
@@ -153,3 +159,7 @@ https://www.ibm.com/support/pages/just-faqs-about-little-endian
  [Other API's](https://acry.github.io/)  
 
  http://www.yolinux.com/TUTORIALS/Endian-Byte-Order.html
+
+## TODO
+
+Make own example for endianess
