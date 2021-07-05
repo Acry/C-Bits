@@ -120,6 +120,8 @@ This instruction is provided for converting little-endian values to big-endian f
 BE Byte-Order: `01` `02` `03` `04` = `0x01` `0x02` `0x03` `0x04`  
 LE Byte-Order: `04` `03` `02` `01` = `0x04` `0x03` `0x02` `0x01`
 
+**Addresses of the image and the text are not the same.**
+
 ![](32-bit.png)
 
 ### Mixed-endian
