@@ -149,6 +149,8 @@ Some systems are capable of processing bi-endian data (BE and LE).
 
 ## Resources
 
+https://bitwisecmd.com/
+
 https://en.wikipedia.org/wiki/Endianness
 
 https://developer.ibm.com/technologies/systems/articles/au-endianc/
