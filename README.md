@@ -150,9 +150,9 @@ Some systems are capable of processing bi-endian data (BE and LE).
 ## Resources
 
 https://bitwisecmd.com/
+http://www.avr-asm-tutorial.net/avr_en/binary/binary.html
 
 https://en.wikipedia.org/wiki/Endianness
-
 https://developer.ibm.com/technologies/systems/articles/au-endianc/
 https://www.ibm.com/support/pages/just-faqs-about-little-endian
 
