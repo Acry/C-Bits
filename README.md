@@ -149,20 +149,19 @@ Some systems are capable of processing bi-endian data (BE and LE).
 
 ## Resources
 
-https://bitwisecmd.com/
-http://www.avr-asm-tutorial.net/avr_en/binary/binary.html
+- https://bitwisecmd.com/
+- http://www.avr-asm-tutorial.net/avr_en/binary/binary.html
 
-https://en.wikipedia.org/wiki/Endianness
-https://developer.ibm.com/technologies/systems/articles/au-endianc/
-https://www.ibm.com/support/pages/just-faqs-about-little-endian
+- https://en.wikipedia.org/wiki/Endianness
+- https://developer.ibm.com/technologies/systems/articles/au-endianc/
+- https://www.ibm.com/support/pages/just-faqs-about-little-endian
+- http://www.yolinux.com/TUTORIALS/Endian-Byte-Order.html
 
-[Bit Twiddling Hacks By Sean Eron Anderson](http://graphics.stanford.edu/~seander/bithacks.html) | 
-[Mark Down Version](https://github.com/gibsjose/BitHacks/blob/master/BitHacks.md)  |
-[Some Notes](https://www.cs.tau.ac.il/~roded/courses/softp-b06/chapter7.txt) |
-    [My C Snippets](https://gist.github.com/Acry/554e04bab3a2669a5ba2ecd4d673e875) |
- [Other API's](https://acry.github.io/)  
-
- http://www.yolinux.com/TUTORIALS/Endian-Byte-Order.html
+- [Bit Twiddling Hacks By Sean Eron Anderson](http://graphics.stanford.edu/~seander/bithacks.html)
+- [Mark Down Version](https://github.com/gibsjose/BitHacks/blob/master/BitHacks.md)
+- [Some Notes](https://www.cs.tau.ac.il/~roded/courses/softp-b06/chapter7.txt)
+- [My C Snippets](https://gist.github.com/Acry/554e04bab3a2669a5ba2ecd4d673e875)
+- [Other API's](https://acry.github.io/)  
 
 ## TODO
 
